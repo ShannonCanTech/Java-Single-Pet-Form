@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Pet Form</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>PET INFO FORM</header>
+
+    <form action="#" th:action="@{petform}" th:object="${pet}" method="post" id="form" class="topBefore">
+
+        <input id="name" type="text" placeholder="PET'S NAME:" th:field="*{name}">
+        <input id="age" type="number" placeholder="PET'S AGE:" th:field="*{age}">
+        <input id="breed" type="text" placeholder="BREED:" th:field="*{breed}">
+        <input id="owner" type="text" placeholder="OWNER'S NAME:" th:field="*{owner}">
+        <input id="submit" type="submit" value="Submit">
+
+    </form>
+
+<!--    <form action="#" th:action="@{petform}" th:object="${pet}" method="post">
+        <label>Pet's Name: </label><input type="text" th:field="*{name}">
+        <label>Pets Age: </label><input type="number" th:field="*{age}">
+        <label>Breed: </label><input type="text" th:field="*{breed}">
+        <label>Owner's Name: </label><input type="text" th:field="*{owner}">
+        <input type="submit" value="Submit">
+    </form>-->
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Pet Info</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <div th:inline="text">
+        <h1>Pet Information</h1>
+        <p>Pet's Name: [[${pet.name}]]</p>
+        <p>Breed: [[${pet.breed}]]</p>
+        <p>Age: [[${pet.age}]]</p>
+        <p>Owner's Name: [[${pet.owner}]]</p>
+    </div>
+</body>
+</html>
